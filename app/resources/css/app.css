@@ -25,6 +25,27 @@ p {
     position: relative;
 }
 
+.arrow-indicator {
+    width: 12px;
+    height: 15px;
+    background: black;
+    position: absolute;
+    bottom: 10px;
+    left: 50%
+}
+
+.arrow-indicator:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    bottom: -8px;
+    background: black;
+    position: absolute;
+    left: 0px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
 .responsive-demo {
     background: url('../images/responsive-web-design.png');
     background-size: contain;
@@ -86,4 +107,13 @@ p {
     height: 50px;
     color: white;
     width: 100%;
+}
+
+/* 
+  Allow angular.js to be loaded in body, hiding cloaked elements until 
+  templates compile.  The !important is important given that there may be 
+  other selectors that are more specific or come later and might alter display.  
+ */
+[ng\:cloak], [ng-cloak], .ng-cloak {
+  display: none !important;
 }

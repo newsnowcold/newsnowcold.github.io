@@ -26,12 +26,13 @@
              role="main"
              layout-sm="column"
              layout-gt-sm="row"
-             layout-align="center center">
+             layout-align="center center"
+             style="height:{{viewportHeight}}px;">
 
             <div flex-sm="100"
                  flex-md="40"
-                 flex-lg="30"
-                 flex-offset-gt-md="10">
+                 flex-lg="40"
+                 flex-offset-gt-md="5">
 
                 <h1>Need a web developer?</h1>
                 <p>Darrel Abello is a philippine based web developer.</p>
@@ -39,9 +40,11 @@
 
             <div flex-sm="100"
                  flex-md="60"
-                 flex-lg="50" 
-                 class="responsive-demo"
-                 style="height:{{viewportHeight}}px;"></div>
+                 flex-lg="40" 
+                 class="responsive-demo">
+            </div>
+
+            <div class="arrow-indicator"></div>
         </div>
         
         <div class="row content-works" ng-include="'app/content/works.html'"></div>
