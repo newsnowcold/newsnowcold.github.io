@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="libs/angular-material/angular-material.min.css">
+    <link rel="stylesheet" type="text/css" href="app/resources/css/app.css">
+    <link rel="stylesheet" type="text/css" href="libs/misc/animations.css">
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.min.css">
+</head>
+<body ng-controller="appCtrl"
+    layout="column"
+    layout-algin="center center"
+    layout-padding
+    ng-cloak>
+
+    <header layout="row"m
+        layout-align="center center">
+        
+        <div>header</div>
+    </header>
+
+    <div class="content">
+        <div flex class="content1"
+             role="main"
+             layout-sm="column"
+             layout-gt-sm="row"
+             layout-align="center center">
+
+            <div flex-sm="100"
+                 flex-md="40"
+                 flex-lg="30"
+                 flex-offset-gt-md="10">
+
+                <h1>Need a web developer?</h1>
+                <p>Darrel Abello is a philippine based web developer.</p>
+            </div>
+
+            <div flex-sm="100"
+                 flex-md="60"
+                 flex-lg="50" 
+                 class="responsive-demo"
+                 style="height:{{viewportHeight}}px;"></div>
+        </div>
+        
+        <div class="row content-works" ng-include="'app/content/works.html'"></div>
+        <div class="row content-skills" ng-include="'app/content/skills.html'"></div>
+    </div>
+
+    <aside role="complementary">
+        
+    </aside>
+    <footer>
+        <div class="row content-footer" ng-include="'app/content/footer.html'"></div>
+    </footer>
+
+
+    <script type="text/javascript" src="libs/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="app/animation.js"></script>
+
+    <script type="text/javascript" src="libs/bootstrap/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="libs/angular/angular.min.js"></script>
+    <script type="text/javascript" src="libs/angular/angular-aria.min.js"></script>
+    <script type="text/javascript" src="libs/angular/angular-animate.min.js"></script>
+    <script type="text/javascript" src="libs/angular/angular-route.min.js"></script>
+    <script type="text/javascript" src="libs/angular-material/angular-material.min.js"></script>
+    <script type="text/javascript" src="libs/angular-material/angular-material-icons.min.js"></script>
+    
+    <script type="text/javascript" src="app/app.js"></script>
+    <script type="text/javascript" src="app/services/AppDataService.js"></script>
+
+    <script type="text/javascript" src="app/services/mockdata/portfolio.js"></script>
+    <script type="text/javascript" src="app/services/mockdata/skills.js"></script>
+
+
+</body>
+</html>

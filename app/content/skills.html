@@ -1,0 +1,18 @@
+<div class="skills-wrapper">
+    <div class="content-header skills-header"
+         layout="column" 
+         layout-align="center center">
+
+        <ng-md-icon icon="settings_applications" style="fill: #767676" size="100"></ng-md-icon>
+        <p class="content-header-text">My Skills</p>
+    </div>
+
+    <div  ng-repeat="item in skills">
+
+        <div ng-repeat="skill in item">
+            <h1 class="col-lg-3"
+                layout="row"
+                layout-align="center center">{{skill.name}}</h1>
+        </div>
+    </div>
+</div>
