@@ -7,12 +7,16 @@
         <p class="content-header-text">My Skills</p>
     </div>
 
-    <div  ng-repeat="item in skills">
+    <div ng-repeat="item in skills" 
+         ng-cloak>
 
         <div ng-repeat="skill in item">
-            <h1 class="col-lg-3 col-md-3 col-sm-1"
+
+            <h1 class="col-lg-3 col-md-3 col-sm-1 txt-skill"
                 layout="row"
-                layout-align="center center">{{skill.name}}</h1>
+                layout-align="center center"
+                ng-bind="skill.name">
+            </h1>
         </div>
     </div>
 </div>

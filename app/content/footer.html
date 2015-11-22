@@ -1,7 +1,64 @@
 <div class="footer-wrapper">
-    <div layout="row"
-         layout-align="center center">
-            
-            <div>My footer message</div>
+    <div layout="column"
+         layout-align="center center"
+         layout-wrap>
+
+            <div class="footer-content"
+                 layout="row"
+                 layout-align="space-between center"
+                 layout-padding layout-margin
+                 layout-fill>
+
+                <div class="brief-about-me"
+                     flex-sm="90"
+                     flex="60"
+                     layout-sm="column"
+                     layout-gt-sm="row"
+                     layout-align="space-between center">
+                     
+                     <div flex="25">
+                         <div class="avatar-pic"></div>
+                     </div>
+                     
+
+                     <div>
+                         <p>
+                             Hello, i am a graduate of BSIT and focusing on web development.
+                             I love watching anime, mountain climbing(really want some adventure)
+                             and also i love to travel 
+                         </p>
+
+                     </div>
+                </div>
+                <div class="social-sites"
+                     layout="row"
+                     layout-align="center center"
+                     flex-sm="90"
+                     flex="40">
+
+                     <ng-md-icon 
+                        icon="linkedin-box"
+                        size="100"
+                        ng-click="gotoSite('linkedin')">
+                    </ng-md-icon>
+
+                     <ng-md-icon 
+                        icon="facebook-box" 
+                        size="100"
+                        ng-click="gotoSite('facebook')">
+                    </ng-md-icon>
+
+                    <ng-md-icon 
+                        icon="github-box" 
+                        size="100"
+                        ng-click="gotoSite('github')">
+                    </ng-md-icon>
+                 </div>
+            </div>
+            <div class="footer-note"
+                 layout="row"
+                 layout-align="center center">
+                © COPYRIGHT 2015
+            </div>
     </div>
 </div>

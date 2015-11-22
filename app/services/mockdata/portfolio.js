@@ -2,7 +2,7 @@ window.portfolio = [
             {
                 title: "Brightvision Portal",
                 background: "",
-                imgLink: "http://www.gettyimages.com/gi-resources/images/CreativeImages/Hero-527920799.jpg",
+                imgLink: "http://i1031.photobucket.com/albums/y374/Darrel_D_Abello/portal-brightvision_zpsodp3xjc6.png",
                 description: ""
             },
             {

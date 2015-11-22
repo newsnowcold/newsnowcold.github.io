@@ -65,6 +65,24 @@ p {
     letter-spacing: 1px;
 }
 
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.header-wrapper {
+    padding: 0 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.header-wrapper .brand > div {
+    margin: 0 5px;
+}
+
 /*works*/
 .works-wrapper {
     position: relative;
@@ -91,6 +109,16 @@ p {
 .skills-wrapper {
     position: relative;
 }
+.skills-wrapper .txt-skill {
+    text-transform: uppercase;
+    height: 50px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.skills-wrapper .rate {
+
+}
 
 .skills-wrapper .skills {
     background-size: cover !important;
@@ -108,6 +136,55 @@ p {
     color: white;
     width: 100%;
 }
+
+/*footer*/
+.footer-wrapper {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.footer-wrapper .brief-about-me > div > p {
+    color: black;
+    text-transform: 
+}
+
+.footer-wrapper .footer-note {
+    width: 100%;
+    background: #A7A7A7;
+    color: #00006F;
+    text-align: center;
+    height: 40px;
+}
+
+.footer-wrapper .avatar-pic {
+    margin: 0 20px;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    background: url('../images/profile.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: solid 3px;
+}
+
+.footer-wrapper .footer-content,
+.footer-wrapper .social-sites {
+    height: 300px;
+}
+
+.footer-wrapper .footer-content {
+    padding: 2px 0;
+    width: 100%;
+}
+
+.footer-wrapper .social-sites {
+    
+}
+
+.footer-wrapper .social-sites > ng-md-icon {
+    cursor: pointer;
+}
+
 
 /* 
   Allow angular.js to be loaded in body, hiding cloaked elements until 
