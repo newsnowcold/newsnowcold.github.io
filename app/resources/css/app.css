@@ -55,10 +55,6 @@ p {
     height:100%;
 }
 
-.content-header {
-    height: 250px;
-}
-
 .content-header-text {
     color: #767676;
     text-transform: uppercase;
@@ -103,6 +99,11 @@ header {
     height: 50px;
     color: white;
     width: 100%;
+    text-align: center;
+}
+
+.works-wrapper .portfolio > footer > span.description {
+    display: none;
 }
 
 /*skills*/
@@ -150,7 +151,7 @@ header {
 .footer-wrapper .footer-note {
     width: 100%;
     background: #A7A7A7;
-    color: #00006F;
+    color: #676769;
     text-align: center;
     height: 40px;
 }
@@ -169,7 +170,7 @@ header {
 
 .footer-wrapper .footer-content,
 .footer-wrapper .social-sites {
-    height: 300px;
+    min-height: 300px;
 }
 
 .footer-wrapper .footer-content {

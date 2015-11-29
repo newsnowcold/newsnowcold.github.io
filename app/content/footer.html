@@ -4,7 +4,8 @@
          layout-wrap>
 
             <div class="footer-content"
-                 layout="row"
+                 layout-gt-sm="row"
+                 layout-sm="column"
                  layout-align="space-between center"
                  layout-padding layout-margin
                  layout-fill>
@@ -14,14 +15,15 @@
                      flex="60"
                      layout-sm="column"
                      layout-gt-sm="row"
-                     layout-align="space-between center">
+                     layout-align="space-between center"
+                     layout-padding>
                      
-                     <div flex="25">
+                     <div flex-gt-sm="25">
                          <div class="avatar-pic"></div>
                      </div>
                      
 
-                     <div>
+                     <div flex>
                          <p>
                              Hello, i am a graduate of BSIT and focusing on web development.
                              I love watching anime, mountain climbing(really want some adventure)
@@ -36,25 +38,29 @@
                      flex-sm="90"
                      flex="40">
 
-                     <ng-md-icon 
-                        icon="linkedin-box"
-                        size="100"
-                        ng-click="gotoSite('linkedin')">
-                    </ng-md-icon>
+                    <a href="https://www.linkedin.com/in/darrelabello" rel="me" target="_blank">
+                        <ng-md-icon 
+                            icon="linkedin-box"
+                            size="100">
+                        </ng-md-icon>
+                    </a>
 
-                     <ng-md-icon 
-                        icon="facebook-box" 
-                        size="100"
-                        ng-click="gotoSite('facebook')">
-                    </ng-md-icon>
+                    <a href="https://www.facebook.com/newsnowcold" rel="me" target="_blank">
+                        <ng-md-icon 
+                            icon="facebook-box" 
+                            size="100">
+                        </ng-md-icon>
+                    </a>
 
-                    <ng-md-icon 
-                        icon="github-box" 
-                        size="100"
-                        ng-click="gotoSite('github')">
-                    </ng-md-icon>
+                    <a href="https://github.com/newsnowcold" rel="me" target="_blank">
+                        <ng-md-icon 
+                            icon="github-box" 
+                            size="100">
+                        </ng-md-icon>
+                    </a>
                  </div>
             </div>
+
             <div class="footer-note"
                  layout="row"
                  layout-align="center center">

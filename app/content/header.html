@@ -6,6 +6,7 @@
         <div flex="70"
              class="brand"
              layout="row"
+             hide-sm
              layout-align="start center">
 
              <div>
@@ -20,12 +21,24 @@
              </div>
         </div>
 
-        <div flex="30"
+        <div flex
+             flex-gt-sm="30"
              layout="row"
              layout-align="space-between center">
-                <div>+639226315331</div>
                 <div layout="row"
+                     layout-sm="column"
                      layout-align="center center">
+
+                    <ng-md-icon icon="call" 
+                        style="fill: white;">
+                    </ng-md-icon> &nbsp;
+                    +639226315331
+                </div>
+
+                <div layout="row"
+                     layout-sm="column"
+                     layout-align="center center">
+
                     <ng-md-icon icon="email" 
                         style="fill: white;">
                     </ng-md-icon> &nbsp;

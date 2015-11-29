@@ -7,14 +7,21 @@
         <p class="content-header-text">My Works</p>
     </div>
 
-    <div  ng-repeat="item in portfolio">
+    <div ng-repeat="item in portfolio">
 
-        <div class="portfolio col-md-3" 
-             style="background:url('{{item.imgLink}}');">
+        <div id="portfolio_{{$index}}"
+             ng-click="gotoSite(item.link)"
+             ng-mouseover="onMouseOver($index)"
+             ng-mouseleave="onMouseLeave($index)"
+             class="portfolio col-md-3"
+             style="background:url({{item.imgLink}});">
 
-            <footer layout="column"
+            <footer class="transition-1s"
+                    layout="column"
                     layout-align="center center">
-                    <span ng-bind="item.title"></span>
+
+                    <span class="title" ng-bind="item.title"></span>
+                    <span class="description transition-halfsec" ng-bind="item.description"></span>
             </footer>
         </div>
     </div>

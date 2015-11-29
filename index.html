@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="app">
 <head>
+    <base href="/">
     <meta charset="UTF-8">
+    <meta name="fragment" content="!" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Darrel Abello is a web/software developer, i am using angularJS as a tool for front end and ASP.NET C# for my backend. i am developing responsive websites, mobile friendly web apps and etc.">
+    <meta name="keywords" content="darrel abello, darrel, abello, freelancer, web developer, darrel abello portfolio, angular developer, freelance angular developer">
+    <meta name="robots" content="index, follow">
+
+
     <title>Darrel Abello</title>
-    <meta name="description" content="Darrel Abello's Personal site/portfolio site where it showcase his works and his skills">
+    
     <link rel="stylesheet" type="text/css" href="libs/angular-material/angular-material.min.css">
     <link rel="stylesheet" type="text/css" href="app/resources/css/app.css">
+    <link rel="stylesheet" type="text/css" href="app/resources/css/customAnimation.css">
     <link rel="stylesheet" type="text/css" href="libs/misc/animations.css">
     <link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.min.css">
+
 </head>
 <body ng-controller="appCtrl"
       layout="column"
@@ -30,11 +39,11 @@
              layout-align="center center"
              style="height:{{viewportHeight}}px;">
 
-            <div flex="50">
+            <div flex-gt-md="50">
 
-                <h1>Hello</h1>
+                <h1>Hello there! I am Darrel Abello</h1>
                 <p>
-                    I'm <b>Darrel Abello</b>, thank you for taking the time
+                    Thank you for taking the time
                     to visit. I'm a web developer based in Philippines, you can
                     tell me your problem and i can share to you my solutions.
                 </p>

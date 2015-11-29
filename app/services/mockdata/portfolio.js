@@ -3,13 +3,14 @@ window.portfolio = [
                 title: "Brightvision Portal",
                 background: "",
                 imgLink: "http://i1031.photobucket.com/albums/y374/Darrel_D_Abello/portal-brightvision_zpsodp3xjc6.png",
-                description: ""
+                description: "A customer portal web app where users can see details of their meetings and etc.",
+                link: "http://portal.brightvision.com/"
             },
             {
-                title: "Basebuild Picture loading Utility",
+                title: "Soon",
                 background: "",
                 imgLink: "http://i.dailymail.co.uk/i/pix/2015/06/26/08/29F51C6A00000578-3139358-image-m-7_1435303227646.jpg",
-                description: ""
+                description: "Hope to see your project in one of these tiles. :)"
             },
             {
                 title: "Soon",
