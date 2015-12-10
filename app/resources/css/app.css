@@ -73,10 +73,16 @@ header {
     padding: 0 20px;
     background: rgba(0, 0, 0, 0.5);
     color: white;
+    font-size: 12px;
 }
 
 .header-wrapper .brand > div {
     margin: 0 5px;
+}
+
+.header-wrapper .header-small {
+    color: white;
+    font-size: 12px;
 }
 
 /*works*/
@@ -157,7 +163,6 @@ header {
 }
 
 .footer-wrapper .avatar-pic {
-    margin: 0 20px;
     border-radius: 10px;
     width: 150px;
     height: 150px;
@@ -174,7 +179,6 @@ header {
 }
 
 .footer-wrapper .footer-content {
-    padding: 2px 0;
     width: 100%;
 }
 
