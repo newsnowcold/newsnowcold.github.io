@@ -7,5 +7,6 @@ module.exports = [
     "app/resources/css/app.css",
     "app/resources/css/customAnimation.css",
     "libs/misc/animations.css",
-    "libs/ngCustomDirective/ngCustomDirective.css"
+    "libs/ngCustomDirective/ngCustomDirective.css",
+    "libs/bootstrap/css/bootstrap.min.css"
 ];
