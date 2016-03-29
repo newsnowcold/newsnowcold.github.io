@@ -21,6 +21,14 @@ p {
     letter-spacing: 0.5px;
 }
 
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
 .content-container {
     position: relative;
 }
@@ -59,135 +67,6 @@ p {
     color: #767676;
     text-transform: uppercase;
     letter-spacing: 1px;
-}
-
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-}
-
-.header-wrapper {
-    padding: 0 20px;
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    font-size: 12px;
-}
-
-.header-wrapper .brand > div {
-    margin: 0 5px;
-}
-
-.header-wrapper .header-small {
-    color: white;
-    font-size: 12px;
-}
-
-/*works*/
-.works-wrapper {
-    position: relative;
-}
-
-.works-wrapper .portfolio {
-    background-size: cover !important;
-    background-repeat: no-repeat;
-    height: 200px;
-    padding: 0 !important;
-    visibility: hidden;
-}
-
-.works-wrapper .portfolio > footer {
-    position: absolute;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    height: 50px;
-    color: white;
-    width: 100%;
-    text-align: center;
-}
-
-.works-wrapper .portfolio > footer > span.description {
-    display: none;
-}
-
-/*skills*/
-.skills-wrapper {
-    position: relative;
-}
-.skills-wrapper .txt-skill {
-    text-transform: uppercase;
-    height: 50px;
-    text-align: center;
-    font-size: 15px;
-}
-
-.skills-wrapper .rate {
-
-}
-
-.skills-wrapper .skills {
-    background-size: cover !important;
-    background-repeat: no-repeat;
-    height: 200px;
-    padding: 0 !important;
-    visibility: hidden;
-}
-
-.skills-wrapper .skills > footer {
-    position: absolute;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    height: 50px;
-    color: white;
-    width: 100%;
-}
-
-/*footer*/
-.footer-wrapper {
-    background: rgba(0, 0, 0, 0.2);
-}
-
-.footer-wrapper .brief-about-me > div > p {
-    color: black;
-    text-transform: 
-}
-
-.footer-wrapper .footer-note {
-    width: 100%;
-    background: #A7A7A7;
-    color: #676769;
-    text-align: center;
-    height: 40px;
-}
-
-.footer-wrapper .avatar-pic {
-    border-radius: 10px;
-    width: 150px;
-    height: 150px;
-    background: url('../images/profile.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border: solid 3px;
-}
-
-.footer-wrapper .footer-content,
-.footer-wrapper .social-sites {
-    min-height: 300px;
-}
-
-.footer-wrapper .footer-content {
-    width: 100%;
-}
-
-.footer-wrapper .social-sites {
-    
-}
-
-.footer-wrapper .social-sites > ng-md-icon {
-    cursor: pointer;
 }
 
 
