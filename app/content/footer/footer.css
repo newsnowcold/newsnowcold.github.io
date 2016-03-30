@@ -19,7 +19,7 @@
     border-radius: 10px;
     width: 150px;
     height: 150px;
-    background: url('../images/profile.png');
+    background: url('../../resources/images/profile.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
