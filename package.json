@@ -1,6 +1,6 @@
 {
-    "name": "Dragoon_web",
-    "version": "1.0.8",
+    "name": "newsnowcold.github.io.git",
+    "version": "1.0.0.0.0",
     "description": "CRM",
     "main": "index.html",
     "directories": {
@@ -19,7 +19,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git@109.74.0.238:Dragoon_web"
+        "url": "https://github.com/newsnowcold/newsnowcold.github.io.git"
     },
-    "author": "SAMATOSA Software Developer"
+    "author": "Darrel Abello"
 }
