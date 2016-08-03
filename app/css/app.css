@@ -1,0 +1,9 @@
+/***************************************************
+*			PROFILE DASHBOARD
+***************************************************/
+
+.dashboard-navigation-menu {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+}

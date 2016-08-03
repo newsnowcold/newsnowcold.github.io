@@ -13,17 +13,9 @@
     <title>Darrel Abello | Web Developer, Portfolio Site </title>
     
     <link rel="stylesheet" type="text/css" href="libs/angular-material/angular-material.min.css">
-    <link rel="stylesheet" type="text/css" href="app/resources/css/app.css">
-    <link rel="stylesheet" type="text/css" href="app/resources/css/customAnimation.css">
-    <link rel="stylesheet" type="text/css" href="libs/misc/animations.css">
-    <link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="libs/ngCustomDirective/ngCustomDirective.css">
 
-    <link rel="stylesheet" type="text/css" href="app/content/customDirectives/customDirectives.css">
-    <link rel="stylesheet" type="text/css" href="app/content/footer/footer.css">
-    <link rel="stylesheet" type="text/css" href="app/content/header/header.css">
-    <link rel="stylesheet" type="text/css" href="app/content/skills/skills.css">
-    <link rel="stylesheet" type="text/css" href="app/content/works/works.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="app/css/app.css">
 
 </head>
 <body ng-controller="appCtrl"
@@ -32,52 +24,29 @@
       layout-padding
       ng-cloak>
 
-        
-    <header>
-        <div class="row content-header" ng-include="'app/content/header/header.html'"></div>
-    </header>
+
+    <div ng-view=""></div>
+
+    <!-- Navigation menu button -->
+    <md-button class="md-fab md-primary dashboard-navigation-menu" 
+               aria-label="Use Android"
+               ng-click="showGridBottomSheet()">
+        <md-icon>
+            <i class="material-icons">apps</i>
+        </md-icon>
+    </md-button>
 
 
-    <div class="content container">
-        <div flex class="content1"
-             role="main"
-             layout-sm="column"
-             layout-gt-sm="row"
-             layout-align="center center"
-             style="height:{{viewportHeight}}px;">
 
-            <div flex-gt-md="50">
 
-                <h1>Hello there! I am Darrel Abello</h1>
-                <p>
-                    Thank you for taking the time
-                    to visit. I'm a web developer based in Philippines, you can
-                    tell me your problem and i can share to you my solutions.
-                </p>
-            </div>
 
-            <div flex="50"
-                 hide-sm 
-                 class="responsive-demo">
-            </div>
 
-            <div class="arrow-indicator"></div>
-        </div>
-        
-        <div class="row content-works" ng-include="'app/content/works/works.html'"></div>
-        <div class="row content-skills" ng-include="'app/content/skills/skills.html'"></div>
-    </div>
 
-    <aside role="complementary">
-        
-    </aside>
-    <footer>
-        <div class="row content-footer" ng-include="'app/content/footer/footer.html'"></div>
-    </footer>
+
+
 
     <!-- use cdn for production -->
     <script type="text/javascript" src="libs/jquery/jquery.min.js"></script>
-    <script type="text/javascript" src="libs/bootstrap/js/bootstrap.min.js"></script>
 
     <script type="text/javascript" src="libs/angular/angular.min.js"></script>
     <script type="text/javascript" src="libs/angular/angular-aria.min.js"></script>
@@ -86,16 +55,25 @@
     <script type="text/javascript" src="libs/angular-material/angular-material.min.js"></script>
     <script type="text/javascript" src="libs/angular-material/angular-material-icons.min.js"></script>    
 
-    <!-- custom app scripts -->
-    <script type="text/javascript" src="libs/ngCustomDirective/ngCustomDirective.js"></script>
-    <script type="text/javascript" src="app/animation.js"></script>
-    
-    <script type="text/javascript" src="app/app.js"></script>
-    <script type="text/javascript" src="app/services/AppDataService.js"></script>
+     <script type="text/javascript" src="app/app.js"></script>
 
-    <script type="text/javascript" src="app/services/mockdata/portfolio.js"></script>
-    <script type="text/javascript" src="app/services/mockdata/skills.js"></script>
+    <!-- component scripts -->
+    <script type="text/javascript" src="app/component/bottomSheetNavigation/bottomSheetNavigation.js"></script>
+    <script type="text/javascript" src="app/component/bottomSheetNavigation/bottomSheetNavigationCtrl.js"></script>
+    <script type="text/javascript" src="app/component/bottomSheetNavigation/bottomSheetNavigationService.js"></script>
 
 
+    <!-- module scripts -->
+    <script type="text/javascript" src="app/module/about/about.js"></script>
+    <script type="text/javascript" src="app/module/about/aboutCtrl.js"></script>
+
+    <script type="text/javascript" src="app/module/contact/contact.js"></script>
+    <script type="text/javascript" src="app/module/contact/contactCtrl.js"></script>
+
+    <script type="text/javascript" src="app/module/portfolio/portfolio.js"></script>
+    <script type="text/javascript" src="app/module/portfolio/portfolioCtrl.js"></script>
+
+    <script type="text/javascript" src="app/module/skills/skills.js"></script>
+    <script type="text/javascript" src="app/module/skills/skillsCtrl.js"></script>
 </body>
 </html>
