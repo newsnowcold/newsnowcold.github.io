@@ -1,1 +1,16 @@
-<h1>Hello contact</h1>
+<div layout="row" class="container contact" layout-wrap>
+	<div flex></div>
+	<div layout="row" layout-wrap flex="66">
+		<div flex="10">
+			<div ng-repeat="sites in socialSites" class="social-sites">
+				<a href="{{sites.link}}" target="_blank" title="{{sites.displayName}}">
+					<ng-md-icon icon="{{sites.displayIcon}}" size="54"></ng-md-icon>
+				</a>
+			</div>
+		</div>
+		<div flex>
+			<div class="avatar" flex="66"></div>
+		</div>
+	</div>
+	<div flex></div>
+</div>

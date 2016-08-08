@@ -1,1 +1,12 @@
-<h1>Hello portfolio</h1>
+<div class="container portfolio" ng-cloak>
+    <md-content>
+        <md-tabs>
+            <md-tab class="md-headline" ng-repeat="portfolio in portfolios" label="portfolio.TabLabel">
+                <md-content class="md-padding" ng-repeat="content in portfolio.Contents">
+                    <h1 class="md-display-2" ng-bind="content.ContentLabel"></h1>
+                    <div ng-bind="content.Content"></div>
+                </md-content>
+            </md-tab>
+        </md-tabs>
+    </md-content>
+</div>

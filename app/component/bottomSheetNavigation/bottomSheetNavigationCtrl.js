@@ -13,12 +13,12 @@
             $scope.navItems = [
                 {
                     icon: "face",
-                    name: "About",
+                    name: "About Me",
                     route: "/about"
                 },
                 {
                     icon: "contact_mail",
-                    name: "Contact Info",
+                    name: "Contact Me!",
                     route: "/contact"
                 },
                 {

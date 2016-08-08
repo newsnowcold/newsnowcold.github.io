@@ -17,11 +17,13 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="app/css/app.css">
 
+    <!-- module style sheet -->
+    <link rel="stylesheet" type="text/css" href="app/module/about/template/css/about.css">
+    <link rel="stylesheet" type="text/css" href="app/module/contact/template/css/contact.css">
+
 </head>
 <body ng-controller="appCtrl"
-      layout="column"
-      layout-algin="center center"
-      layout-padding
+      layout="row"
       ng-cloak>
 
 
@@ -31,6 +33,7 @@
     <md-button class="md-fab md-primary dashboard-navigation-menu" 
                aria-label="Use Android"
                ng-click="showGridBottomSheet()">
+               
         <md-icon>
             <i class="material-icons">apps</i>
         </md-icon>
@@ -72,8 +75,12 @@
 
     <script type="text/javascript" src="app/module/portfolio/portfolio.js"></script>
     <script type="text/javascript" src="app/module/portfolio/portfolioCtrl.js"></script>
+    <script type="text/javascript" src="app/module/portfolio/portfolio.data.js"></script>
 
     <script type="text/javascript" src="app/module/skills/skills.js"></script>
     <script type="text/javascript" src="app/module/skills/skillsCtrl.js"></script>
+
+
+
 </body>
 </html>
