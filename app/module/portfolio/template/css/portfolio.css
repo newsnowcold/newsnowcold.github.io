@@ -1,0 +1,11 @@
+.container.portfolio {
+	    
+}
+
+.container.portfolio md-tab-item {
+	color: rebeccapurple;
+}
+
+.container.portfolio md-tab-item.md-active {
+	color: rebeccapurple;
+}
