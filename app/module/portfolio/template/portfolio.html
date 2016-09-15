@@ -1,12 +1,22 @@
 <div class="container portfolio" ng-cloak>
     <md-content>
-        <md-tabs>
-            <md-tab class="md-headline" ng-repeat="portfolio in portfolios" label="portfolio.TabLabel">
-                <md-content class="md-padding" ng-repeat="content in portfolio.Contents">
+        <md-tabs flex layout="column" layout-fill>
+
+            <md-tab flex layout="column" class="md-headline" ng-repeat="portfolio in portfolios" label="{{portfolio.TabLabel}}">
+
+                <md-content class="md-padding tab-content-text" ng-repeat="content in portfolio.Contents">
                     <h1 class="md-display-2" ng-bind="content.ContentLabel"></h1>
-                    <div ng-bind="content.Content"></div>
+                    <div>
+                        <md-card ng-style="$index % 2 == 0 ? {'float': 'left'} : {'float': 'right'}" class="tab-content-image">
+                            <img src="{{content.ContentImage}}" class="md-card-image" alt="{{content.ContentLabel}}">                         
+                        </md-card>
+                        <p ng-bind="content.Content"></p>
+                    </div>
                 </md-content>
+
             </md-tab>
+
         </md-tabs>
+
     </md-content>
 </div>

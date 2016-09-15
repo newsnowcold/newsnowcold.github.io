@@ -1,5 +1,21 @@
 .container.portfolio {
-	    
+}
+
+
+.container.portfolio .tab-content-text:last-child {
+	padding-bottom: 150px;
+}
+
+.container.portfolio .tab-content-image {
+	left; margin: 0 30px 10px 10px; 
+	max-width: 500px;
+}
+.container.portfolio > md-content {
+	position: absolute; 
+	top: 0; 
+	bottom: 0; 
+	right: 0; 
+	left: 0;
 }
 
 .container.portfolio md-tab-item {

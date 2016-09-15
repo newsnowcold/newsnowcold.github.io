@@ -35,8 +35,6 @@
                                            ]
                                          );
 
-
-
         						          var chart = new google.visualization.WordTree(document.getElementById('wordtree_basic'));
         						          chart.draw(data, {
         						              format: 'explicit',
@@ -45,6 +43,14 @@
         						              colors: ['red', 'black', 'green']
         						          });
 
+                              var chartContainer = $('#wordtree_basic').find('[dir="ltr"]'),
+                                  chart = chartContainer.find('[aria-label="A chart."]'),
+                                  rect = chart.find('rect');
+
+                                  chartContainer.css('width', '100%');
+                                  chart.css('width', '100%');   
+                                  rect.css('width', '100%');
+                                                                                                 
         						      }
         }])
 
