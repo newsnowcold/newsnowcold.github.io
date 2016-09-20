@@ -8,7 +8,8 @@
         'aboutModule',
         'contactModule',
         'portfolioModule',
-        'skillsModule'
+        'skillsModule',
+        'magnifyImage'
         ])
 
     .config(['$routeProvider', function ($routeProvider) {
