@@ -12,6 +12,11 @@
 
             $scope.navItems = [
                 {
+                    icon: "home",
+                    name: "Home",
+                    route: "/"
+                },
+                {
                     icon: "face",
                     name: "About Me",
                     route: "/about"
