@@ -18,20 +18,20 @@
                                            [
                                               ['id', 'childLabel', 'parent', 'Points', { role: 'style' }],
                                               [0, 'What are my skills', -1, 1, 'WHITE'],
-                                              [1, 'Front end', 0, 1, 'black'],
-                                              [2, 'Back end', 0, 1, 'black'],
-                                              [3, 'AngularJS', 6, 3, 'black'],
-                                              [4, 'Angular material', 3, 1, 'black'],
-                                              [5, 'JQuery', 6, 1, 'black'],
-                                              [6, 'Javascript', 1, 1, 'black'],
-                                              [7, 'CSS', 1, 1, 'black'],
+                                              [1, 'Front end', 0, 7, 'black'],
+                                              [2, 'Back end', 0, 8, 'black'],
+                                              [3, 'AngularJS', 6, 7, 'black'],
+                                              [4, 'Angular material', 3, 7, 'black'],
+                                              [5, 'JQuery', 6, 9, 'black'],
+                                              [6, 'Javascript', 1, 9, 'black'],
+                                              [7, 'CSS', 1, 9, 'black'],
                                               [8, 'Bootstrap', 7, 5, 'black'],
                                               [9, 'HTML', 1, 1, 'black'],
-                                              [10, 'C#', 2, 1, 'black'],
-                                              [11, 'Database', 2, 1, 'black'],
-                                              [12, '.NET', 10, 1, 'black'],
-                                              [13, 'MSSQL', 11, 1, 'black'],
-                                              [14, 'Azure', 0, 1, 'black']
+                                              [10, 'C#', 2, 8, 'black'],
+                                              [11, 'Database', 2, 8, 'black'],
+                                              [12, '.NET', 10, 8, 'black'],
+                                              [13, 'MSSQL', 11, 8, 'black'],
+                                              [14, 'Azure', 0, 8, 'black']
                                            ]
                                          );
 
