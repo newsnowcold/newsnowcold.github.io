@@ -26,7 +26,7 @@
                                               [6, 'Javascript', 1, 9, 'black'],
                                               [7, 'CSS', 1, 9, 'black'],
                                               [8, 'Bootstrap', 7, 5, 'black'],
-                                              [9, 'HTML', 1, 1, 'black'],
+                                              [9, 'HTML', 1, 9, 'black'],
                                               [10, 'C#', 2, 8, 'black'],
                                               [11, 'Database', 2, 8, 'black'],
                                               [12, '.NET', 10, 8, 'black'],
