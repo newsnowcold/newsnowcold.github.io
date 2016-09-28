@@ -5,6 +5,7 @@
         'ngMaterial',
         'ngMdIcons',
         'bottomSheetNavigation',
+        'homeModule',
         'aboutModule',
         'contactModule',
         'portfolioModule',
@@ -13,11 +14,9 @@
         ])
 
     .config(['$routeProvider', function ($routeProvider) {
-       $routeProvider
-            .when('/', {
-                templateUrl: 'app/module/home/template/home.html',
-                controller: 'aboutCtrl'
-            });
+        $routeProvider.otherwise({
+            redirectTo: '/'
+        });
     }])
 
     .filter('trustUrl', ['$sce', function ($sce) {
