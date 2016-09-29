@@ -23,7 +23,8 @@
 
 
                         setTimeout(function () {                            
-                            $('.container.home .avatar-container .tab-content-image .bendings').css('opacity', '1')
+                            $('.container.home .avatar-container .tab-content-image .bendings').css('opacity', '1');
+                            $('.container.home .avatar-container .tab-content-image .bending-ps').css('opacity', '1');
                         }, 4000)
                     }, 5000);
 

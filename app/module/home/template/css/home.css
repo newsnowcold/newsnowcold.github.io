@@ -5,10 +5,12 @@
     left: 0;
     right: 0;
     background-color: black;
+    display:table;
 }
 
     .container.home .avatar-container {
         height: 100%;
+        margin: 0 auto;
     }
 
         .container.home .avatar-container .avatar-container-mdcard {
@@ -40,6 +42,7 @@
 
 .tab-content-image .bendings .backend,
 .tab-content-image .bendings .frontend,
+.tab-content-image .bendings .open-bending,
 .tab-content-image .bendings .graphics {
     background-position: center;
     background-repeat: no-repeat;
@@ -60,3 +63,8 @@
 .tab-content-image .bendings .graphics {
     background-image: url('../images/graphics.png');
 }
+
+.tab-content-image .bendings .open-bending {
+    background-image: url('../images/open_bending_icon.png');
+}
+

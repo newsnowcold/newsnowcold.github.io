@@ -4,8 +4,8 @@
                  ng-mouseover="startAnimation($event)"
                  ng-click="startAnimation($event)"
                  style="background-image:url({{imgSrc}})">
-            <img style="visibility:hidden;" src="{{imgSrc}}" width="500" class="md-card-image" alt="Alternate Text" />
 
+            <img style="visibility:hidden;" src="{{imgSrc}}" width="500" class="md-card-image" alt="Alternate Text" />
 
             <div class="bendings" style="opacity:0;" layout="column" layout-gt-sm="row" layout-align="center center">
                 <div class="bendings-container" flex>
@@ -19,6 +19,9 @@
                 <div class="bendings-container" flex>
                     <div class="graphics"></div>
                     <span class="bending-text">Graphics bending!</span>
+                </div>
+                <div class="bendings-container" flex>
+                    <div class="open-bending"></div>                    
                 </div>
             </div>
         </md-card>
