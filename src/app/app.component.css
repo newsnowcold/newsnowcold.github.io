@@ -1,0 +1,23 @@
+.app-wrapper {
+      overflow-x: hidden;
+}
+
+.app-wrapper .sticky-navbar {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 20px;
+    z-index: 10;
+}
+
+.app-wrapper ul.nav-bar-items li {
+  margin-right: 20px;
+  text-transform: uppercase;
+}
+
+.app-wrapper .component-container {
+  position: relative;
+  padding-bottom: 150px;
+}

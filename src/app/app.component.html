@@ -1,0 +1,56 @@
+<div class="app-wrapper">
+    <nav class="sticky-navbar" [@stickyNavBarAnimation]='state'>
+      <div flex="60" layout-gt-sm="row" layout-sm="column"
+        layout-align="space-between center" layout-fill>
+        <div class="nav-bar-header" flex>HEADER / IMAGE HERE</div>
+        <ul class="nav-bar-items"
+          layout-gt-sm="row"
+          layout-sm="column">
+          <li><a href="#">services</a></li>
+          <li><a href="#">portfolio</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">team</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="component-container">
+      <app-home></app-home>
+    </div>
+
+    <div class="component-container">
+      <app-my-services></app-my-services>
+    </div>
+
+    <div class="component-container">
+      <app-portfolio></app-portfolio>
+    </div>
+
+    <div class="component-container">
+      <app-about></app-about>
+    </div>
+
+    <div class="component-container">
+      <app-team></app-team>
+    </div>
+   
+    <div class="component-container">
+      <app-contact-us></app-contact-us>
+    </div>
+   
+
+   <footer layout="row" layout-align="center center" id="page-footer">
+        <div id="copy-right" flex>
+            Copyright © darrelabello.com 2016
+        </div>
+        <div id="social-links" layout="row" layout-align="center center" flex>
+            <i class="fa fa-twitter-square" style="font-size:36px"></i>
+            <i class="fa fa-linkedin-square" style="font-size:36px; margin: 0 10px;"></i>
+            <i class="fa fa-facebook-square" style="font-size:36px"></i>
+        </div>
+        <div id="terms_and_condition" flex>
+            terms and condition
+        </div>
+   </footer>
+</div>

@@ -1,0 +1,11 @@
+
+.intro-wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: gray;
+    background-image: url('/assets/images/coffee-smartphone-desk-pen.jpg');
+    background-position: center center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
