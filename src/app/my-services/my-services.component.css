@@ -1,3 +1,20 @@
 .services-wrapper .section-title {
     text-align: center;
 }
+.services-wrapper .services .service {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    padding: 25px;
+}
+
+.services-wrapper .services .service > p {
+    text-align: center;
+}
+
+.services-wrapper .services .service .service-heading{
+    margin: 15px 0;
+    text-transform: capitalize;
+}
+
+.services-wrapper .services .service .logo > i {
+    font-size: 110px;
+}
