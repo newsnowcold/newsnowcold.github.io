@@ -34,3 +34,7 @@
 .bg-light-gray {
   background-color: #eee;
 }
+
+.mat-sidenav-transition .mat-sidenav-content {
+    overflow: hidden;
+}
