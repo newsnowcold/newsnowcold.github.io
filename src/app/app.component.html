@@ -1,4 +1,6 @@
 <div class="app-wrapper">
+
+    <!--menu navigation for desktop view-->
     <nav class="sticky-navbar" [@stickyNavBarAnimation]='state' hide-sm hide-xs>
         <div flex="60" layout-gt-sm="row" layout-sm="column" layout-xs="column" layout-align="space-between center" layout-fill>
             <div class="nav-bar-header" flex>HEADER / IMAGE HERE</div>
@@ -12,18 +14,21 @@
         </div>
     </nav>
 
-    <md-sidenav-container class="example-container">
-        <nav class="sticky-navbar-mobile" hide-gt-sm>
-            <md-sidenav #sidenav class="example-sidenav">
-                Jolly good!
-            </md-sidenav>
-
-            <div class="mobile-menu">
-                <button md-button (click)="sidenav.open()">
+    <!--menu navigation for mobile-->
+    <nav class="sticky-navbar-mobile" hide-gt-sm>
+        <div class="mobile-menu">
+            <button md-button (click)="sidenav.open()">
                 Open sidenav
                 </button>
-            </div>
-        </nav>
+        </div>
+    </nav>
+
+    <md-sidenav-container>
+
+        <md-sidenav #sidenav class="sidenav-content">
+            
+        </md-sidenav>
+
         <div class="component-container">
             <app-home></app-home>
         </div>
