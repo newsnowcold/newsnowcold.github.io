@@ -37,6 +37,7 @@ a:visited {
 h1, h2, h3, h4, h5, h6 {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: semi-bold;
+    line-height: 1.1;
 }
 
 h1 {
@@ -96,4 +97,8 @@ section h3.section-subheading {
 #page-footer {
     padding: 25px;
     text-align: center;
+}
+
+p {
+    line-height: 1.75;
 }

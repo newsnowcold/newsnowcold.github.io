@@ -28,5 +28,9 @@
 
 .app-wrapper .component-container {
   position: relative;
-  padding-bottom: 150px;
+  padding: 150px 15px;
+}
+
+.bg-light-gray {
+  background-color: #eee;
 }

@@ -4,14 +4,18 @@
         <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</h3>
     </div>
 
-    <div class="portfolio-container" layout="row">
+    <div class="portfolio-container" layout="row" layout-wrap>
         <div class="portfolio" *ngFor="let portfolio of portfolios"
             layout="column">
-            <div class="thumbnail">
+            <div class="thumbnail" 
+                [ngStyle]="{ 
+                    'background-image' : 'url(' + portfolio.thumbnailImageUrl + ')' }">
 
             </div>
-            <div class="portfolio-heading">{{portfolio.heading}}</div>
-            <div class="portfolio-subheading">{{portfolio.subHeading}}</div>
+            <div class="portfolio-caption" layout="column" layout-align="center center">
+                <h4>{{portfolio.heading}}</h4>
+                <p class="text-muted">{{portfolio.subHeading}}</p>
+            </div>
         </div>
     </div>
 </section>

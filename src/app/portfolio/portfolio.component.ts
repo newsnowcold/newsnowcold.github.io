@@ -13,11 +13,11 @@ export class PortfolioComponent implements OnInit {
 
     constructor() {
 
-        for (var i = 0; i <= 6; i++) {
+        for (var i = 0; i < 6; i++) {
             this.portfolios.push({
                 heading: Math.random().toString(36).slice(5),
                 subHeading: Math.random().toString(36).slice(1),
-                thumbnailImageUrl: ""
+                thumbnailImageUrl: "https://img.memecdn.com/soon-my-friend-soon_o_175785.jpg"
             });
         }
     }
