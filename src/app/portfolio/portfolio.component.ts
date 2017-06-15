@@ -13,7 +13,7 @@ export class PortfolioComponent implements OnInit {
 
     constructor() {
 
-        for (var i = 0; i < 6; i++) {
+        for (var i = 0; i < 8; i++) {
             this.portfolios.push({
                 heading: Math.random().toString(36).slice(5),
                 subHeading: Math.random().toString(36).slice(1),
