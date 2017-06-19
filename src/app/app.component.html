@@ -5,11 +5,11 @@
         <div flex="60" layout-gt-sm="row" layout-sm="column" layout-xs="column" layout-align="space-between center" layout-fill>
             <div class="nav-bar-header" flex>HEADER / IMAGE HERE</div>
             <ul class="nav-bar-items" hide-sm hide-xs layout="row">
-                <li><a href="#">services</a></li>
-                <li><a href="#">portfolio</a></li>
-                <li><a href="#">about</a></li>
-                <li><a href="#">team</a></li>
-                <li><a href="#">contact</a></li>
+                <li><a href="#services">services</a></li>
+                <li><a href="#portfolios">portfolio</a></li>
+                <li><a href="#about">about</a></li>
+                <!--<li><a href="#team">team</a></li>-->
+                <li><a href="#contact">contact</a></li>
             </ul>
         </div>
     </nav>
@@ -33,23 +33,23 @@
             <app-home></app-home>
         </div>
 
-        <div class="component-container">
+        <div id="services" class="component-container" >
             <app-my-services></app-my-services>
         </div>
 
-        <div class="component-container bg-light-gray">
+        <div id="portfolios" class="component-container bg-light-gray">
             <app-portfolio></app-portfolio>
         </div>
 
-        <div class="component-container">
+        <div id="about" class="component-container">
             <app-about></app-about>
         </div>
 
-        <div class="component-container bg-light-gray">
+        <!--<div id="team" class="component-container bg-light-gray">
             <app-team></app-team>
-        </div>
+        </div>-->
 
-        <div class="component-container">
+        <div id="contact" class="component-container bg-light-gray">
             <app-contact-us></app-contact-us>
         </div>
 

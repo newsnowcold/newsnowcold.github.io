@@ -102,3 +102,8 @@ section h3.section-subheading {
 p {
     line-height: 1.75;
 }
+
+.mat-sidenav-transition .mat-sidenav-content {
+    overflow: hidden;
+}
+

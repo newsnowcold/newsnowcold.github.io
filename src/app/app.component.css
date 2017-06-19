@@ -28,13 +28,14 @@
 
 .app-wrapper .component-container {
   position: relative;
-  padding: 150px 15px;
+  padding: 150px 15px;  
 }
 
-.bg-light-gray {
+.app-wrapper .component-container > * > section {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.app-wrapper .bg-light-gray {
   background-color: #eee;
-}
-
-.mat-sidenav-transition .mat-sidenav-content {
-    overflow: hidden;
 }

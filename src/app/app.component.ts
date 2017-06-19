@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, ViewEncapsulation } from '@angular/core';
 
 import { stickyNavBarAnimation } from './_animations/index'
 
@@ -9,6 +9,7 @@ declare var $:any;
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
+  encapsulation: ViewEncapsulation.None,
   animations: [ stickyNavBarAnimation ]
 })
 export class AppComponent {
