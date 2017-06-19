@@ -3,7 +3,9 @@
     <!--menu navigation for desktop view-->
     <nav class="sticky-navbar" [@stickyNavBarAnimation]='state' hide-sm hide-xs>
         <div flex="60" layout-gt-sm="row" layout-sm="column" layout-xs="column" layout-align="space-between center" layout-fill>
-            <div class="nav-bar-header" flex>HEADER / IMAGE HERE</div>
+            <div class="nav-bar-header" flex>
+                <a href="#home">SmallDOT.com</a>
+            </div>
             <ul class="nav-bar-items" hide-sm hide-xs layout="row">
                 <li><a href="#services">services</a></li>
                 <li><a href="#portfolios">portfolio</a></li>
@@ -29,7 +31,7 @@
             
         </md-sidenav>
 
-        <div>
+        <div id="home">
             <app-home></app-home>
         </div>
 
